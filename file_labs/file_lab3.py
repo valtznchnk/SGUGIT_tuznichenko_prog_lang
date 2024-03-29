@@ -1,3 +1,4 @@
+import math
 def func_lab3(number_task):
     if number_task == 1:
         print(
