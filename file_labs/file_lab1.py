@@ -40,7 +40,7 @@ def func_lab1(number_task):
                     if 0 <= H < 12 and 0 <= M < 60 and 0 <= S < 60:
                         total_seconds = (H * 3600 + M * 60 + S)  # Общее количество секунд с начала суток
                         total_seconds %= 43200  # Переводим в промежуток 12 часов
-                        angle = round(total_seconds / 43200 * 360, 2)  # Угол поворота часовой стрелки
+                        angle = str(round(total_seconds / 43200 * 360, 2))  # Угол поворота часовой стрелки
                         out_str = 'Угол, на который повернулась часовая стрелка с начала суток: ' + angle
                         return out_str
                     else:
